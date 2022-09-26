@@ -16,3 +16,12 @@ function submit(e) {
     console.log("You pressed enter!");
   }
 }
+
+function toggleVisible() {
+  var x = document.getElementById("tag");
+  if (x.src.slice(-11) === "img/tag.png") {
+    x.src = "img/tag-blank.png";
+  } else {
+    x.src = "img/tag.png";
+  }
+}
