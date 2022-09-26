@@ -21,14 +21,14 @@
     <meta name="theme-color" content="#fafafa" />
   </head>
 
-  <body onclick="toggleVisible()">
+  <body>
     <form action="#" onsubmit="submit">
       <!-- Add your site or application content here -->
       <img id="load" src="img/loading.gif" alt="" />
 
       <img
         id="avatar"
-        src="https://metadata.ens.domains/mainnet/avatar/alisha.eth"
+        src="https://metadata.ens.domains/mainnet/avatar/coltron.eth"
         alt=""
       />
       <img id="tag" src="img/tag.png" alt="" role="button" tabindex="0" />
@@ -39,8 +39,18 @@
         onblur="contentEdited()"
         onkeydown="keyDown()"
       >
-        alisha.eth
+        coltron.eth
       </h2>
+      <div id="checks">
+        <input
+          type="checkbox"
+          name="visibility"
+          id="visibility"
+          value=""
+          onchange="toggleVisible()"
+        />
+        <label for="visibility">show frame</label>
+      </div>
     </form>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>

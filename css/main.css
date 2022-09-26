@@ -50,6 +50,14 @@ left: 440px;
 
  }
 
+ #checks {
+position: absolute;
+top: 530px;
+left: 20px;
+font-family: Satoshi, helvetica, arial;
+
+}
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
