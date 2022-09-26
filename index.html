@@ -21,24 +21,17 @@
     <meta name="theme-color" content="#fafafa" />
   </head>
 
-  <body>
+  <body onclick="toggleVisible()">
     <form action="#" onsubmit="submit">
       <!-- Add your site or application content here -->
       <img id="load" src="img/loading.gif" alt="" />
 
       <img
         id="avatar"
-        src="https://metadata.ens.domains/mainnet/avatar/nick.eth"
+        src="https://metadata.ens.domains/mainnet/avatar/alisha.eth"
         alt=""
       />
-      <img
-        id="tag"
-        src="img/tag.png"
-        alt=""
-        onclick="toggleVisible()"
-        role="button"
-        tabindex="0"
-      />
+      <img id="tag" src="img/tag.png" alt="" role="button" tabindex="0" />
       <h2
         id="name"
         contenteditable="true"
@@ -46,7 +39,7 @@
         onblur="contentEdited()"
         onkeydown="keyDown()"
       >
-        nick.eth
+        alisha.eth
       </h2>
     </form>
 
