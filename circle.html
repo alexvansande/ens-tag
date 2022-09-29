@@ -21,14 +21,18 @@
     <meta name="theme-color" content="#fafafa" />
 
     <style media="screen">
-      #circ {
-        top: 420px;
+      #avatar {
+        width: 100px;
+        height: 100px;
+        left: 516px;
+        top: 205px;
+        border-radius: 50%;
       }
 
       #logo {
         position: absolute;
         width: 60px;
-        top: 210px;
+        top: 420px;
         left: 537px;
       }
     </style>
@@ -37,13 +41,22 @@
   <body>
     <form action="#" onsubmit="submit">
       <!-- Add your site or application content here -->
+      <img id="load" src="img/loading.gif" alt="" />
 
+      <img
+        id="avatar"
+        src="https://metadata.ens.domains/mainnet/avatar/coltron.eth"
+        alt=""
+      />
       <img id="logo" src="img/logo.png" />
-      <h2 id="rec">
-        <a href="rectangle.html">Rectangle</a>
-      </h2>
-      <h2 id="circ">
-        <a href="circle.html">Circle</a>
+      <h2
+        id="name"
+        contenteditable="true"
+        onfocus="contentFocus()"
+        onblur="contentEdited()"
+        onkeydown="keyDown()"
+      >
+        coltron.eth
       </h2>
     </form>
 

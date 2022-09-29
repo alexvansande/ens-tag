@@ -19,32 +19,38 @@
     <link rel="stylesheet" href="css/main.css" />
 
     <meta name="theme-color" content="#fafafa" />
-
-    <style media="screen">
-      #circ {
-        top: 420px;
-      }
-
-      #logo {
-        position: absolute;
-        width: 60px;
-        top: 210px;
-        left: 537px;
-      }
-    </style>
   </head>
 
   <body>
     <form action="#" onsubmit="submit">
       <!-- Add your site or application content here -->
+      <img id="load" src="img/loading.gif" alt="" />
 
-      <img id="logo" src="img/logo.png" />
-      <h2 id="rec">
-        <a href="rectangle.html">Rectangle</a>
+      <img
+        id="avatar"
+        src="https://metadata.ens.domains/mainnet/avatar/coltron.eth"
+        alt=""
+      />
+      <img id="tag" src="img/tag.png" alt="" role="button" tabindex="0" />
+      <h2
+        id="name"
+        contenteditable="true"
+        onfocus="contentFocus()"
+        onblur="contentEdited()"
+        onkeydown="keyDown()"
+      >
+        coltron.eth
       </h2>
-      <h2 id="circ">
-        <a href="circle.html">Circle</a>
-      </h2>
+      <div id="checks">
+        <input
+          type="checkbox"
+          name="visibility"
+          id="visibility"
+          value=""
+          onchange="toggleVisible()"
+        />
+        <label for="visibility">show frame</label>
+      </div>
     </form>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
